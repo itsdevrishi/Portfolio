@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+}
+
+/* Navbar */
+
+header{
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+}
+
+nav a:hover{
+    color:#0077ff;
+}
+
+/* Hero */
+
+.hero{
+    width:90%;
+    margin:auto;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.hero-text span{
+    color:#0077ff;
+}
+
+.hero-text h3{
+    margin:20px 0;
+    color:#555;
+}
+
+.hero-text p{
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#0077ff;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#005fd6;
+}
+
+.hero-image img{
+    width:300px;
+    border-radius:50%;
+}
+
+/* Sections */
+
+section{
+    width:90%;
+    margin:80px auto;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* Projects */
+
+.project-container{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    flex:1;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    background:#0077ff;
+    color:white;
+    cursor:pointer;
+}
+
+/* Contact */
+
+#contact{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-image img{
+    width:220px;
+    margin-bottom:30px;
+}
+
+.project-container{
+    flex-direction:column;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+}
+
+}
