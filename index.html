@@ -1,119 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishi Raj | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modern portfolio website for Rishi Raj" />
+  <title>Rishi Raj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="progress-bar"></div>
 
-    <!-- Navbar -->
+  <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
 
-    <header>
-        <nav>
-            <h2>Rishi Raj</h2>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Rishi<span>Raj</span></a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
 
-    <!-- Hero -->
+      <ul class="nav-links">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
     <section id="home" class="hero">
-
-        <div class="hero-text">
-
-            <h1>Hello, I'm <span>Rishi Raj</span></h1>
-
-            <h3>Frontend Developer</h3>
-
-            <p>
-                I build clean and responsive websites using HTML, CSS and JavaScript.
-            </p>
-
-            <a href="#projects" class="btn">View Projects</a>
-
-        </div>
-
-        <div class="hero-image">
-            <!-- <img src="https://via.placeholder.com/300" alt="Profile"> -->
-        </div>
-
-    </section>
-
-    <!-- About -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I'm a ECE student passionate about web development and
-            problem solving. Currently learning JavaScript.
+      <div class="hero-content reveal">
+        <p class="eyebrow">Electronics & Communication Engineering Student</p>
+        <h1>
+          I’m <span class="gradient-text" id="role">Rishi Raj</span>
+        </h1>
+        <p class="hero-copy">
+          Aspiring VLSI Engineer | Verilog Developer | Frontend Web Developer.
+          I’m a motivated B.Tech ECE student at KIET Group of Institutions with a passion for
+          VLSI Design, Digital Electronics, Embedded Systems, and modern web development.
         </p>
 
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="project-container">
-
-            <div class="card">
-                <h3>Portfolio Website</h3>
-
-                <p>
-                    A personal portfolio built using HTML, CSS and JavaScript.
-                </p>
-
-                <button>GitHub</button>
-
-            </div>
-
-            <div class="card">
-                <h3>Weather App</h3>
-
-                <p>
-                    Weather application using JavaScript and API.
-                </p>
-
-                <button>GitHub</button>
-
-            </div>
-
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
         </div>
 
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong>3+</strong>
+            <span>Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <strong>100%</strong>
+            <span>Responsive Design</span>
+          </div>
+          <div class="stat-card">
+            <strong>24/7</strong>
+            <span>Curiosity Mode</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orb"></div>
+        <div class="profile-card">
+          <img src="profile.jpg" alt="Rishi Raj" class="avatar-image" />
+          <h3>Available for learning, collaboration, and impactful projects</h3>
+          <p>Based in India • Passionate about VLSI, embedded systems, and frontend development</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Motivated learner building practical solutions.</h2>
+      </div>
 
-    <section id="contact">
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>Who I am</h3>
+          <p>
+            I’m a motivated B.Tech Electronics and Communication Engineering student at KIET Group of Institutions,
+            with a strong interest in VLSI Design, Digital Electronics, Verilog HDL, Embedded Systems, and Frontend Web Development.
+          </p>
+        </article>
 
-        <h2>Contact Me</h2>
-
-        <p>Email : rishiraj01102004@gmail.com</p>
-
-        <p>GitHub : https://github.com/itsdevrishi</p>
-
+        <article class="about-card reveal">
+          <h3>My journey</h3>
+          <p>
+            I enjoy learning through practical implementation and building real-world projects. I completed a Web Development Internship at Prodigy InfoTech,
+            where I developed projects using HTML, CSS, and JavaScript.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <footer>
+    <section id="skills" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Education & Focus</p>
+        <h2>Building a strong foundation in hardware, design, and development.</h2>
+      </div>
 
-        <p>© Rishi Raj</p>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>Education</h3>
+          <p>🎓 B.Tech – Electronics & Communication Engineering<br />KIET Group of Institutions</p>
+        </article>
 
-    </footer>
+        <article class="about-card reveal">
+          <h3>Current Focus</h3>
+          <ul class="feature-list">
+            <li>• VLSI Design</li>
+            <li>• Verilog HDL</li>
+            <li>• Frontend Development</li>
+            <li>• Digital Electronics</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work that reflects my style and approach.</h2>
+      </div>
 
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>Portfolio Website</h3>
+          <p>A polished personal portfolio with animated sections and interactive UI.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Weather App</h3>
+          <p>A modern weather dashboard with clean visuals and live data concepts.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something innovative together.</h2>
+        <p>
+          Reach out if you want to collaborate on a project, discuss VLSI ideas, or build a modern web experience.
+        </p>
+        <a href="mailto:rishiraj01102004@gmail.com" class="btn btn-primary">Email Me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Rishi Raj. Built with care and creativity.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
